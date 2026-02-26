@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valuta koverterer</title>
-  </head>
+  <title>Valuta konverterer</title>
+</head>
 
 <body>
   <div class="container">
     <form action="/" method="post">
+
       <div>
-        <label for="valuta2">Valuta en:</label>
-        <input type="number" name="amount2" id="amonut2" required>
-        <input type="text" name="valuta1" id="valuta1" required>
+        <label for="amount1">Amount:</label>
+        <input type="number" name="amount1" id="amount1" required>
+
+        <label for="currency1">From:</label>
+        <input type="text" name="currency1" id="currency1" placeholder="USD" required>
       </div>
-      </div>
+
+      <br>
+
       <div>
-        <label for="valuta2">Valuta to:</label>
-        <input type="number" name="amount2" id="amomut2" required>
-        <input type="text" name="valuta2" id="valuta2" required>
+        <label for="currency2">To:</label>
+        <input type="text" name="currency2" id="currency2" placeholder="NOK" required>
       </div>
+
+      <br>
+
       <button type="submit">Exchange</button>
+
     </form>
   </div>
-
 </body>
-
 </html>
