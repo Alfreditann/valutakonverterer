@@ -1,0 +1,86 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glass Card */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 420px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    color: white;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Inputs */
+input {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    transform: scale(1.03);
+}
+
+/* Button */
+button {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Result Box */
+.result {
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}

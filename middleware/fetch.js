@@ -19,9 +19,9 @@ async function fetchData(req, res, next) {
 
         }
 
-        const data = await response.json();
+        const exchangeData = await response.json();
 
-        const rate = data.conversion_rates[target];
+        const rate = exchangeData.conversion_rates[target];
 
         req.exchangeRate = {
             base,
